@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+
+<!-- ================= LOGIN PAGE ================= -->
+<div id="loginPage" class="login-page">
+    <div class="login-box">
+        <img src="logo.svg" alt="Spotify" class="login-logo">
+        <h2>Log in to Spotify</h2>
+
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+
+        <button id="loginBtn">Login</button>
+        <p id="loginError"></p>
+    </div>
+</div>
+
+<!-- ================= APP ================= -->
+<div id="app" style="display:none;">
+    <div class="container flex bg-color">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="left border">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="home.svg"> Home</li>
+
+                    <li id="searchBtn">
+                        <img class="invert" src="search.svg"> Search
+                    </li>
+
+                    <!-- Search Box -->
+                    <div id="searchBox" class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search in your library...">
+                    </div>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="images.png">
+                    <h3>Your Library</h3>
+                </div>
+
+                <div class="songslist">
+                    <ul></ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="#">Legal</a></div>
+                    <div><a href="#">Privacy</a></div>
+                    <div><a href="#">Cookies</a></div>
+                    <div><a href="#">Accessibility</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24">
+                        <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24">
+                        <path d="M9 6l6 6-6 6" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <img class="invert hambuger" src="hambuger.svg" width="24">
+                </div>
+
+                <div class="buttons">
+                    <button class="loginbtn">Login</button>
+                    <button class="signbtn">Sign Up</button>
+                </div>
+            </div>
+
+            <!-- PLAYLIST -->
+            <div class="spotifyPlaylist">
+                <h1>Spotify playlist</h1>
+
+                <div class="cardcontainer">
+                    <div data-folder="Telugu Hits" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20">
+                                <path d="M8 5v14l11-7z" fill="black"/>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002a0fd4432bf92076295ca6d46">
+                        <h2>New Year Party</h2>
+                        <p>By Spotify</p>
+                    </div>
+
+                    <div data-folder="Tamil" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20">
+                                <path d="M8 5v14l11-7z" fill="black"/>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002dab984599cb4aa3f14dcdeb0">
+                        <h2>Trending Tamil</h2>
+                        <p>By Spotify</p>
+                    </div>
+
+                    <div data-folder="Hindi" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20">
+                                <path d="M8 5v14l11-7z" fill="black"/>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0258397d59e15b5149adf86033">
+                        <h2>Ae Dil Hai Mushkil</h2>
+                        <p>By Pritam</p>
+                    </div>
+
+                    <div data-folder="RajaSaab" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20">
+                                <path d="M8 5v14l11-7z" fill="black"/>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02b88f823f06c211ce5573a720">
+                        <h2>Raja Saab</h2>
+                        <p>By Thaman</p>
+                    </div>
+                    <div data-folder="RajaSaab"  class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M8 5v14l11-7z" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e028e131dc2a8eb86d164346003" alt="">
+                        <h2>Orange</h2>
+                        <p>By Harris  Jayaraj</p>
+                    </div>
+                    
+                    <div data-folder="RajaSaab"  class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M8 5v14l11-7z" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e028cbf4925111458bccb1cd13d" alt="">
+                        <h2>Pushpa 2</h2>
+                        <p>By DSP</p>
+                    </div>
+                    
+                    <div data-folder="English"  class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M8 5v14l11-7z" fill="black" />
+                                </svg>
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e027704566a51ab17c885221bde" alt="">
+                            <h2>Your Eyes</h2>
+                            <p>Barney Sku</p>
+                        </div>
+                </div>
+            </div>
+
+            <!-- PLAYBAR -->
+            <div class="playbar">
+                <div class="playbar-top">
+                    <div class="songinfo"></div>
+                    <div class="songtime"></div>
+                </div>
+
+                <div class="seekbar">
+                    <div class="progress"></div>
+                    <div class="circle"></div>
+                </div>
+
+                <div class="controls">
+                    <div></div>
+                    <div class="invert" class="songbutton">
+                        <img src="previous.svg" id="previous">
+                        <img src="play.svg" id="play">
+                        <img src="next.svg" id="next">
+                    </div>
+
+                    <div class="volume-container">
+                        <img class="invert" src="volume.svg">
+                        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
