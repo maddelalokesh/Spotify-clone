@@ -17,10 +17,11 @@ A Spotify-inspired music player built using **HTML, CSS, and JavaScript**.
 - JavaScript
 
 ## 📸 Preview
-(Add screenshots here if you want)
+<img width="1919" height="1079" alt="Screenshot 2026-01-13 170705" src="https://github.com/user-attachments/assets/d9cc5901-52ce-4c18-ad65-4c2d816780a7" />
+
 
 ## 🔗 Live Demo
-https://your-username.github.io/spotify-clone/
+https://github.com/maddelalokesh/Spotify-clone
 
 ## 🙌 Author
 **Lokesh Maddela**
